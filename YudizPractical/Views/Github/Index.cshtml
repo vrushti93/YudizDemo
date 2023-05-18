@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"><strong>Search in Gihub Repo</strong></h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8 item_content">
+                        <form method="post">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <div class="col-md-12" style="margin-top:15px;">
+                                                    <label style="font-weight:bold;">Enter Github Username</label>
+                                                    <input type='text' class='form-control'/>
+                                                </div>
+                                               
+                                                <div class="text-center col-md-12" style="margin-top:35px;">
+                                                    <button class="btn btn-primary btn-sx" type="submit" asp-action="/Gihub/Details"><i class="glyphicon glyphicon-plus"></i> Search</button>
+                                                    <a class="btn btn-primary btn-sx" asp-page="/Gihub/Details"><i class="glyphicon glyphicon-backward"></i> Product List</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
